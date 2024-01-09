@@ -13,7 +13,7 @@ const About = () => {
           EXPLORE NOW
         </p>
         <p className="text-gray-300 text-center ">
-          I'm a skilled web developer with expertise in building modern, responsive UIs with React, React Native,
+          Im a skilled web developer with expertise in building modern, responsive UIs with React, React Native,
           and CSS frameworks. I craft performant back-ends with Node.js and Express, utilize databases like
           Firebase and MongoDB, and leverage PWA and offline capabilities for enhanced user experiences.
 

@@ -7,9 +7,9 @@ import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    "https://developer-portfolio-ibrahim-memons-projects.vercel.app"
-  ),
+  // metadataBase: new URL(
+  //   "https://developer-portfolio-ibrahim-memons-projects.vercel.app"
+  // ),
   title: "Usama Portfolio",
   description: "Developer Portfolio By Usama Rasheed",
   keywords: ["Developer", "Portfolio", "Developer Portflio", "Usama Rasheed"],

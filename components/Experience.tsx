@@ -17,7 +17,7 @@ const Experience = () => {
           <p className="text-gray-300">AUG 2022 - PRESENT, HYDERABAD</p>
         </div>
         <p className="text-gray-300 pt-5">
-          I'm a skilled web developer with expertise in building modern, responsive UIs with React, React Native,
+          Im a skilled web developer with expertise in building modern, responsive UIs with React, React Native,
           and CSS frameworks. I craft performant back-ends with Node.js and Express, utilize databases like
           Firebase and MongoDB, and leverage PWA and offline capabilities for enhanced user experiences. My
           proficiency in JavaScript, TypeScript, Git, and GitHub makes me a reliable team player ready to tackle
