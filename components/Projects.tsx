@@ -19,7 +19,7 @@ const Projects = () => {
             target="_blank"
             className="z-[1]"
           >
-            <div className="flex-row flex mb-5">
+            <div className="flex-row flex mb-5 items-center">
               <Image
                 src="/FirstProject.png"
                 height={120}
@@ -30,7 +30,7 @@ const Projects = () => {
                 <p className="text-white font-semibold text-xl">CRM</p>
                 <p className="text-gray-500 text-[10px]">
                   Designed a modern UI website comprising more than 50 screens,
-                   with the integration of a blog using React Js.
+                   with  using React Js.
                 </p>
                 <p className="text-white text-[10px]">Email:admin@gmail.com</p>
                 <p className="text-white text-[10px]">Password:11223344</p>
@@ -43,7 +43,7 @@ const Projects = () => {
             target="_blank"
             className="z-[1]"
           >
-            <div className="flex-row flex mb-5">
+            <div className="flex-row flex mb-5 items-center">
               <Image
                 src="/SecondProject.png"
                 height={120}
@@ -53,8 +53,7 @@ const Projects = () => {
               <div className="p-3">
                 <p className="text-white font-semibold text-xl">POS</p>
                 <p className="text-gray-500 text-[10px]">
-                  Developed a web application on React Js Allow user to Work offline that use PWA technology
-                  Email:admin@gmail.com
+                  Developed a web application on React Js, Works offline that use PWA technology
 
                 </p>
                 <p className="text-white text-[10px]">Email:admin@gmail.com</p>
@@ -70,7 +69,7 @@ const Projects = () => {
             target="_blank"
             className="z-[1]"
           >
-            <div className="flex-row flex mb-5">
+            <div className="flex-row flex mb-5 items-center">
               <Image
                 src="/ThirdProject.png"
                 height={150}
@@ -93,7 +92,7 @@ const Projects = () => {
             target="_blank"
             className="z-[1]"
           >
-            <div className="flex-row flex mb-5">
+            <div className="flex-row flex mb-5 items-center">
               <Image
                 src="/FouProject.png"
                 height={150}
