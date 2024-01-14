@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   // ),
   title: "Usama's Portfolio",
   description: "Developer Portfolio By Usama Rasheed",
-  keywords: ["Developer", "Portfolio", "Developer Portflio", "Usama Rasheed","MERN Stack Developer","Software Engineer","Usama","Usama dev"],
+  keywords: ["Developer", "Portfolio", "Developer Portflio", "Usama Rasheed", "MERN Stack Developer", "Software Engineer", "Usama", "Usama dev"],
   openGraph: {
     title: "Usama Rasheed",
     description: "MERN Stack Developer/Software Engineer",

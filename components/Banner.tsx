@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import TypeWriterComponent from "./TypeWriterComponent";
 
 const Banner = () => {
   return (
@@ -11,7 +12,7 @@ const Banner = () => {
           <Image src="/Me.png" height={300} width={300} alt="Usama Rasheed" />
         </div>
 
-        <div className="flex flex-col gap-6 mt-6 cursor-pointer hover:-translate-y-1  transition  hover:scale-110 transition ease-in-out hover:text-transparent bg-clip-text  hover:bg-gradient-to-r from-purple-500 to-orange-400 z-[1] tracking-tighter text-7xl font-semibold text-white max-w-[600px] w-auto h-auto">
+        <div className="flex flex-col gap-6 mt-6 cursor-pointer hover:-translate-y-1  transition  hover:scale-110 transition ease-in-out   hover:bg-gradient-to-r from-purple-500 to-orange-400 z-[1] tracking-tighter text-7xl font-semibold text-white max-w-[600px] w-auto h-auto">
           Usama Rasheed!
         </div>
         <p className="text-2xl font-medium tracking-tighter  text-gray-300 max-w-[600px]">
@@ -21,6 +22,10 @@ const Banner = () => {
           </span>{" "}
           ☕️
         </p>
+        <div className="text-white text-4xl hover:text-transparent bg-clip-text hover:bg-gradient-to-r from-purple-500 to-orange-400 z-[1] tracking-tighter cursor-pointer"> 
+
+        <TypeWriterComponent />
+        </div>
         <p className="text-md text-gray-200 my-5 max-w-[600px]">
           Passionate Software Engineer with a focus on MERN Stack development,
           dedicated to crafting elegant and user-friendly Web Apps.
