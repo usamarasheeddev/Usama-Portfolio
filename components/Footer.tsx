@@ -20,7 +20,7 @@ const Footer = () => {
                 src={social.image}
                 height={30}
                 width={30}
-                className="mx-5"
+                className="mx-5 "
                 alt={social.alt}
               />
             </Link>
