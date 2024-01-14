@@ -7,15 +7,15 @@ export default function TypeWriterComponent() {
             <Typewriter
                 options={{
                     strings: [
-                        "MERN Stack Developer",
-                        "React Js Developer",
-                        "Node Js Developer",
-                        "Software Engineer"
+                        "MERN Stack Developer!",
+                        "React Js Developer!",
+                        "Node Js Developer!",
+                        "Software Engineer!"
                     ],
                     autoStart: true,
                     loop: true,
                     deleteSpeed: 50,
-                    
+
                 }}
             />
         </div>
