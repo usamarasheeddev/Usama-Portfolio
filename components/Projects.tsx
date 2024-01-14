@@ -1,7 +1,8 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
+import { useScroll, motion } from "framer-motion"
 const Projects: React.FC = () => {
 
   type projects = {
@@ -49,6 +50,12 @@ const Projects: React.FC = () => {
       description: 'Designed the modern UI for an ecommerce store.',
     },
   ];
+
+  const ref = React.useRef<HTMLDivElement>(null)
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["2 9.44", "1.11 1"]
+  })
   return (
     <section id="projects">
       <h1 className="text-white font-semibold text-center text-6xl pt-[35px]">
@@ -60,30 +67,41 @@ const Projects: React.FC = () => {
       <div className=" container mx-auto 2xl flex  flex-col items-center ">
         <div className="flex-row max-w-[45rem] flex-wrap flex mt-7">
           {projects.map((project, index) => (
-            <Link
+            <motion.div
               key={index}
-              href={project.linkTo}
-              rel="noopener noreferrer"
-              target="_blank"
-              className="z-[1]"
+              ref={ref}
+              style={{
+                opacity: scrollYProgress,
+                scale: scrollYProgress
+              }}
             >
-              <div className="flex-col w-[20rem] flex mb-5 items-center">
-                <Image
-                  src={project.imageSrc}
-                  height={180}
-                  width={300}
-                  alt={project.imageAlt}
-                />
-                <div className="p-4">
-                  <p className="text-white font-semibold text-xl">{project.title}</p>
-                  <p className="text-gray-300 text-[11px]">{project.description}</p>
-                  {project?.email && <p className="text-white text-[11px]">Email: {project.email}</p>}
-                  {project?.password && (
-                    <p className="text-white text-[11px]">Password: {project.password}</p>
-                  )}
+
+              <Link
+
+                href={project.linkTo}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="z-[1]"
+              >
+                <div className="flex-col w-[20rem] flex mb-5 items-center">
+                  <Image
+                    src={project.imageSrc}
+                    height={180}
+                    width={300}
+                    alt={project.imageAlt}
+                  />
+                  <div className="p-4">
+                    <p className="text-white font-semibold text-xl">{project.title}</p>
+                    <p className="text-gray-300 text-[11px]">{project.description}</p>
+                    {project?.email && <p className="text-white text-[11px]">Email: {project.email}</p>}
+                    {project?.password && (
+                      <p className="text-white text-[11px]">Password: {project.password}</p>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </motion.div>
+
           ))}
         </div>
 

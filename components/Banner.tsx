@@ -3,6 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import TypeWriterComponent from "./TypeWriterComponent";
+import Link from "next/link";
+import { Social_Icons } from "@/constant";
 
 const Banner = () => {
   return (
@@ -22,15 +24,15 @@ const Banner = () => {
           </span>{" "}
           ☕️
         </p>
-        <div className="text-white text-4xl hover:text-transparent bg-clip-text hover:bg-gradient-to-r from-purple-500 to-orange-400 z-[1] tracking-tighter cursor-pointer"> 
+        <div className="text-white text-4xl hover:text-transparent bg-clip-text hover:bg-gradient-to-r from-purple-500 to-orange-400 z-[1] tracking-tighter cursor-pointer">
 
-        <TypeWriterComponent />
+          <TypeWriterComponent />
         </div>
         <p className="text-md text-gray-200 my-5 max-w-[600px]">
           Passionate Software Engineer with a focus on MERN Stack development,
           dedicated to crafting elegant and user-friendly Web Apps.
         </p>
-        <div className="text-md flex justify-center">
+        <div className="text-md flex justify-center gap-3">
           {/* <button
             onClick={() => window.open("mailto:usamarasheed2188@gmail.com")}
             className=" z-[1]     padding-20  hover:bg-white rounded-3xl  text-white font-semibold hover:text-black py-3 px-10  border-[0.1px] border-white hover:border-transparent "
@@ -43,8 +45,32 @@ const Banner = () => {
           >
             Contact Me
           </button>
-
         </div>
+        <div className="text-md flex justify-center gap-3 mt-5">
+
+          {Social_Icons.map((social) => {
+            return (
+              <Link
+                href={social.link}
+                rel="noopener noreferrer"
+                target="_blank"
+                key={social.alt}
+                className="z-[1]"
+              >
+                <Image
+                  src={social.image}
+                  height={30}
+                  width={30}
+                  className="mx-5 "
+                  alt={social.alt}
+                />
+              </Link>
+            );
+          })}
+        </div>
+
+
+
       </div>
     </div>
   );
