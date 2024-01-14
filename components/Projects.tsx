@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
         EXPLORE NOW
       </p>
       <div className=" container mx-auto 2xl flex  flex-col items-center ">
-        <div className="flex-col flex mt-7">
+        <div className="flex-row max-w-[45rem] flex-wrap flex mt-7">
           {projects.map((project, index) => (
             <Link
               key={index}
@@ -67,14 +67,14 @@ const Projects: React.FC = () => {
               target="_blank"
               className="z-[1]"
             >
-              <div className="flex-row flex mb-5 items-center">
+              <div className="flex-col w-[20rem] flex mb-5 items-center">
                 <Image
                   src={project.imageSrc}
-                  height={project.imageAlt === 'Supermarcado' ? 150 : 120}
-                  width={270}
+                  height={180}
+                  width={300}
                   alt={project.imageAlt}
                 />
-                <div className="p-3">
+                <div className="p-4">
                   <p className="text-white font-semibold text-xl">{project.title}</p>
                   <p className="text-gray-300 text-[11px]">{project.description}</p>
                   {project?.email && <p className="text-white text-[11px]">Email: {project.email}</p>}
