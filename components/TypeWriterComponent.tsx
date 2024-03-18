@@ -9,13 +9,14 @@ export default function TypeWriterComponent() {
                     strings: [
                         "MERN Stack Developer!",
                         "React Js Developer!",
+                        "Next Js Developer!",
                         "Node Js Developer!",
                         "Software Engineer!"
                     ],
                     autoStart: true,
                     loop: true,
                     deleteSpeed: 50,
-
+                    
                 }}
             />
         </div>

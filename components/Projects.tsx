@@ -16,12 +16,21 @@ const Projects: React.FC = () => {
   };
   const projects: projects[] = [
     {
+      linkTo: 'https://aipoem-generator.vercel.app/',
+      imageSrc: '/poemGenerator.png',
+      imageAlt: 'AI poem generator',
+      title: 'AI poem generator',
+      description:
+        'An AI-powered web application that creates poems, Chat GPT-4 integration with Next JS ',
+      
+    },
+    {
       linkTo: 'https://crmen.surge.sh/',
       imageSrc: '/FirstProject.png',
       imageAlt: 'CRM Project',
       title: 'CRM',
       description:
-        'Designed a modern UI website comprising more than 50 screens, with using React Js.Include React recharts,Gant-chart,React-Schedular for a Italian client',
+        'created a cutting-edge UI website with over 50 screens with React Js.Add Gantt charts, React schedules, and React charts for an Italian client.',
       email: 'admin@gmail.com',
       password: '11223344',
     },
@@ -31,7 +40,7 @@ const Projects: React.FC = () => {
       imageAlt: 'POS',
       title: 'POS',
       description:
-        'Developed a web application on React Js, Works offline that use PWA technology.A full resturant Management Solution and already in production mode more over i am still working on project inhancement. ',
+        `Created a React Js web application that utilises PWA technologies and functions offline.A comprehensive restaurant management system is currently in production, and I'm still working on project enhancement. `,
       email: 'admin@gmail.com',
       password: '12345',
     },
@@ -40,7 +49,7 @@ const Projects: React.FC = () => {
       imageSrc: '/ThirdProject.png',
       imageAlt: 'VergeSystems',
       title: 'Niwali',
-      description: 'Niwali website using React.js, Also includes a stripe payment gateway.',
+      description: 'React.js-powered Niwali e-commerce website with a Stripe payment mechanism integrated.',
     },
     {
       linkTo: 'https://super-mart.surge.sh',
