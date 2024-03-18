@@ -11,6 +11,7 @@ export default function TypeWriterComponent() {
                         "React Js Developer!",
                         "Next Js Developer!",
                         "Node Js Developer!",
+                        "Full Stack Developer!",
                         "Software Engineer!"
                     ],
                     autoStart: true,
