@@ -22,7 +22,7 @@ const Projects: React.FC = () => {
       title: 'AI poem generator',
       description:
         'An AI-powered web application that creates poems, Chat GPT-4 integration with Next JS ',
-      
+
     },
     {
       linkTo: 'https://crmen.surge.sh/',
@@ -63,7 +63,7 @@ const Projects: React.FC = () => {
   const ref = React.useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["2 9.44", "1.11 1"]
+    offset: ["1 9.44", "1 1"]
   })
   return (
     <section id="projects">
@@ -76,40 +76,39 @@ const Projects: React.FC = () => {
       <div className=" container mx-auto 2xl flex  flex-col items-center ">
         <div className="flex-row max-w-[45rem] flex-wrap flex mt-7">
           {projects.map((project, index) => (
-            <motion.div
+
+
+            <Link
               key={index}
-              ref={ref}
-              style={{
-                opacity: scrollYProgress,
-                scale: scrollYProgress
-              }}
+              href={project.linkTo}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="z-[1] cursor-pointer"
             >
+              <motion.div
+                ref={ref}
+                style={{
+                  opacity: scrollYProgress,
+                  scale: scrollYProgress
+                }}
+                className="flex-col w-[20rem] flex mb-5 items-center">
+                <Image
+                  src={project.imageSrc}
+                  height={180}
+                  width={300}
 
-              <Link
-
-                href={project.linkTo}
-                rel="noopener noreferrer"
-                target="_blank"
-                className="z-[1]"
-              >
-                <div className="flex-col w-[20rem] flex mb-5 items-center">
-                  <Image
-                    src={project.imageSrc}
-                    height={180}
-                    width={300}
-                    alt={project.imageAlt}
-                  />
-                  <div className="p-4">
-                    <p className="text-white font-semibold text-xl">{project.title}</p>
-                    <p className="text-gray-300 text-[11px]">{project.description}</p>
-                    {project?.email && <p className="text-white text-[11px]">Email: {project.email}</p>}
-                    {project?.password && (
-                      <p className="text-white text-[11px]">Password: {project.password}</p>
-                    )}
-                  </div>
+                  alt={project.imageAlt}
+                />
+                <div className="p-4">
+                  <p className="text-white font-semibold text-xl">{project.title}</p>
+                  <p className="text-gray-300 text-[11px]">{project.description}</p>
+                  {project?.email && <p className="text-white text-[11px]">Email: {project.email}</p>}
+                  {project?.password && (
+                    <p className="text-white text-[11px]">Password: {project.password}</p>
+                  )}
                 </div>
-              </Link>
-            </motion.div>
+              </motion.div>
+            </Link>
 
           ))}
         </div>
