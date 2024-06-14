@@ -10,13 +10,13 @@ const Experience = () => {
         EXPLORE NOW
       </p>
       <div className=" container mx-auto 2xl ">
-        <div className="flex  flex-row justify-between pt-5">
+        <div className="flex  md:flex-row  flex-col text-center  justify-center md:justify-between pt-5">
           <p className="text-gray-300 ">
             <span className="font-semibold">MERN Stack Developer /</span> Software Engineer
           </p>
           <p className="text-gray-300">AUG 2022 - PRESENT</p>
         </div>
-        <p className="text-gray-300 pt-5">
+        <p className="text-gray-300 pt-5 text-justify">
           Im a skilled web developer with expertise in building modern, responsive UIs with React, React Native,
           and CSS frameworks. I craft performant back-ends with Node.js and Express, utilize databases like
           Firebase and MongoDB, and leverage PWA and offline capabilities for enhanced user experiences. My

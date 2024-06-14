@@ -32,7 +32,7 @@ const Banner = () => {
           Passionate Software Engineer with a focus on MERN Stack development,
           dedicated to crafting elegant and user-friendly Web Apps.
         </p>
-        <div className="text-md flex justify-center gap-3">
+        <div className="text-md flex justify-center flex-col md:flex-row gap-3">
           {/* <button
             onClick={() => window.open("mailto:usamarasheed2188@gmail.com")}
             className=" z-[1]     padding-20  hover:bg-white rounded-3xl  text-white font-semibold hover:text-black py-3 px-10  border-[0.1px] border-white hover:border-transparent "
@@ -45,6 +45,17 @@ const Banner = () => {
           >
             Contact Me
           </button>
+          <div className="block md:hidden ">
+          <Link
+            href={'https://drive.google.com/drive/folders/1c9cZ1ldba308xyLAdKq4Nw5rld8uzIiZ?usp=sharing'}
+            rel="noopener noreferrer"
+            target="_blank"
+            // onClick={() => window.open("mailto:usamarasheed2188@gmail.com")}
+            className=" z-[1] bg-transparent mt-4  padding-10 cursor-pointer bg-black hover:bg-[#2E2E2E] rounded-xl  text-white  px-5"
+          >
+            Download Cv
+          </Link>
+        </div>
         </div>
         <div className="text-md flex justify-center gap-3 mt-5">
 

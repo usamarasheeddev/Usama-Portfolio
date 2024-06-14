@@ -7,7 +7,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="w-full h-[65px] bg-['#111'] fixed backdrop-blur-sm z-50 px-10">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
+      <div className="w-full h-full flex flex-row items-center md:justify-between justify-center m-auto px-[10px]">
         <a
           href="#about-me"
           className="h-auto w-auto flex flex-row items-center"
@@ -25,7 +25,7 @@ const Navbar = () => {
           /> */}
         </a>
 
-        <div className="flex flex-row gap-5">
+        <div className="hidden md:flex flex-row gap-5 ">
           <Link
             href={'https://drive.google.com/drive/folders/1c9cZ1ldba308xyLAdKq4Nw5rld8uzIiZ?usp=sharing'}
             rel="noopener noreferrer"
