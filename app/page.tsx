@@ -11,9 +11,9 @@ export default function Home() {
       <div className="flex flex-col gap-20">
         <Banner />
         <About />
-        <ProjectTimeLine/>
         <Experience />
-        <Projects />
+        <ProjectTimeLine/>
+        {/* <Projects /> */}
         <Footer />
       </div>
     </main>

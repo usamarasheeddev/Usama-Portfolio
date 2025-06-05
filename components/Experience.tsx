@@ -11,7 +11,7 @@ const Experience = () => {
       </p>
       <div className=" container mx-auto 2xl ">
 
-        <div className="bg-gray-800 p-10 rounded-md">
+        <div className="backdrop-blur-2xl p-10 rounded-md hover:scale-105 z-50">
 
           <div className="flex  md:flex-row  flex-col text-center  justify-center md:justify-between pt-5">
             <p className="text-gray-300 ">
@@ -27,7 +27,7 @@ const Experience = () => {
           </p>
         </div>
         
-        <div className="bg-gray-800 p-10 rounded-md mt-6">
+        <div className="backdrop-blur-2xl p-10 rounded-md mt-6 hover:scale-105 z-50">
 
           <div className="flex  md:flex-row  flex-col text-center  justify-center md:justify-between pt-5">
             <p className="text-gray-300 ">
