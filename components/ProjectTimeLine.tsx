@@ -19,7 +19,7 @@ export default function ProjectTimeLine() {
       title: 'Social Tip',
       description: 'Social Tip empowers you to transform everyday moments into real cash rewards by sharing your passion for your favorite brands. I’m proud to have contributed to the Social Tip team, including the development of its microservice architecture.',
     },
-      {
+    {
       linkTo: 'https://pos.thewebconcept.com/',
       imageSrc: '/SecondProject.png',
       imageAlt: 'POS',
@@ -36,13 +36,15 @@ export default function ProjectTimeLine() {
       description: 'An AI-powered web app that seamlessly generates creative poems using GPT-4 and Next.js, offering an innovative and dynamic poetry generation experience.',
     },
     {
-      linkTo: 'https://www.niwali.com/',
-      imageSrc: '/ThirdProject.png',
-      imageAlt: 'VergeSystems',
-      title: 'Niwali',
-      description: 'A robust E-commerce site built with React.js, seamlessly integrated with Stripe for secure and efficient payment processing, providing a smooth and reliable shopping experience.',
+      linkTo: 'https://patio-greenly-dashboard.vercel.app/',
+      imageSrc: '/patio.jpg',
+      imageAlt: 'Patio Greenly',
+      title: 'Patio Greenly',
+      description: 'Patio Greenly is an app offering expert gardening services in Dubai, simplifying outdoor space management.',
+      email: '+923091524895',
+      password: '11223344',
     },
-    {
+      {
       linkTo: 'https://crmen.surge.sh/',
       imageSrc: '/FirstProject.png',
       imageAlt: 'CRM Project',
@@ -51,7 +53,15 @@ export default function ProjectTimeLine() {
       email: 'admin@gmail.com',
       password: '11223344',
     },
+    {
+      linkTo: 'https://www.niwali.com/',
+      imageSrc: '/ThirdProject.png',
+      imageAlt: 'VergeSystems',
+      title: 'Niwali',
+      description: 'A robust E-commerce site built with React.js, seamlessly integrated with Stripe for secure and efficient payment processing, providing a smooth and reliable shopping experience.',
+    },
   
+
     {
       linkTo: 'https://super-mart.surge.sh',
       imageSrc: '/FouProject.png',
@@ -86,15 +96,15 @@ export default function ProjectTimeLine() {
                         <a href={project.linkTo} className="font-bold text-white">
                           {project.title}
                         </a>
-                        <a  href={project?.linkTo} className="text-xs font-medium  cursor-pointer text-indigo-500">Link</a>
+                        <a href={project?.linkTo} className="text-xs font-medium  cursor-pointer text-indigo-500">Link</a>
                       </div>
                       <div className="text-white text-justify">{project.description}</div>
-                      <div style={{display:project?.email?"":"none"}}>
-                        <div className="text-white text-justify">
-                            {project.email}</div>
-                        <div className="text-white text-justify">
-                            {project.password}</div>
-                    </div>
+                      <div style={{ display: project?.email ? "" : "none" }}>
+                        <div className="text-white text-justify">Email-- 
+                          {project.email}</div>
+                        <div className="text-white text-justify">Password:--
+                          {project.password}</div>
+                      </div>
                       <img src={project.imageSrc} alt={project.imageAlt} className="mt-4 w-full h-auto rounded" />
                     </div>
                   </div>
