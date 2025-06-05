@@ -119,7 +119,7 @@ const Projects: React.FC = () => {
               target="_blank"
               className="z-[1] cursor-pointer w-full max-w-lg mb-5 transform hover:scale-105 transition-transform duration-300"
             >
-              <div
+              <motion.div
                 ref={(el) => (projectRefs.current[index] = el)}
                 className={`project-card flex flex-col bg-gray-800 rounded-lg shadow-lg overflow-hidden`}
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -139,7 +139,7 @@ const Projects: React.FC = () => {
                   {project?.email && <p className="text-white text-sm mt-2">Email: {project.email}</p>}
                   {project?.password && <p className="text-white text-sm mt-2">Password: {project.password}</p>}
                 </div>
-              </div>
+              </motion.div>
             </Link>
           ))}
         </div>
