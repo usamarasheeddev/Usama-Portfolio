@@ -13,7 +13,7 @@ const About = () => {
           EXPLORE NOW
         </p>
         <p className="text-gray-300 text-center">
-          I'm a passionate and results-driven web developer with a strong focus on building modern, responsive user interfaces using React, React Native, and advanced CSS frameworks. I architect high-performance back-end systems with Node.js and Express, and work seamlessly with databases like Firebase and MongoDB to ensure scalable and real-time applications.
+          Im a passionate and results-driven web developer with a strong focus on building modern, responsive user interfaces using React, React Native, and advanced CSS frameworks. I architect high-performance back-end systems with Node.js and Express, and work seamlessly with databases like Firebase and MongoDB to ensure scalable and real-time applications.
 
           <br />
           <br />
