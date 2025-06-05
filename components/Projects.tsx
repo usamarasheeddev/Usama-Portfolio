@@ -18,45 +18,55 @@ const Projects: React.FC = () => {
 
   const projects: Project[] = [
     {
+      linkTo: 'https://www.socialtip.io/',
+      imageSrc: '/socialTip.jpg',
+      imageAlt: 'Social tip',
+      title: 'Social Tip',
+      description: 'Social Tip lets you turn everyday moments into real cash rewards by sharing your love for your favourite brands.',
+    },
+    {
       linkTo: 'https://aipoem-generator.vercel.app/',
       imageSrc: '/poemGenerator.png',
       imageAlt: 'AI poem generator',
       title: 'AI poem generator',
-      description: 'An AI-powered web application that creates poems, Chat GPT-4 integration with Next JS ',
+      description: 'AI-powered web app that generates poems using GPT-4 and Next JS.',
+    },
+      {
+      linkTo: 'https://www.niwali.com/',
+      imageSrc: '/ThirdProject.png',
+      imageAlt: 'VergeSystems',
+      title: 'Niwali',
+      description: 'E-commerce site built with React.js, integrated with Stripe for secure payments.',
     },
     {
       linkTo: 'https://crmen.surge.sh/',
       imageSrc: '/FirstProject.png',
       imageAlt: 'CRM Project',
       title: 'CRM',
-      description: 'created a cutting-edge UI website with over 50 screens with React Js.Add Gantt charts, React schedules, and React charts for an Italian client.',
+      description: 'Built a UI with 50+ screens using React JS, adding Gantt charts and React schedules for an Italian client.',
       email: 'admin@gmail.com',
       password: '11223344',
     },
     {
-      linkTo: 'https://pospwa5.surge.sh/',
+      linkTo: 'https://pos.thewebconcept.com/',
       imageSrc: '/SecondProject.png',
       imageAlt: 'POS',
       title: 'POS',
-      description: 'Created a React Js web application that utilises PWA technologies and functions offline.A comprehensive restaurant management system is currently in production, and Im still working on project enhancement.',
+      description: 'Developed a React JS web app using PWA technology, enabling offline usage for restaurant management.',
       email: 'admin@gmail.com',
       password: '12345',
     },
-    {
-      linkTo: 'https://www.niwali.com/',
-      imageSrc: '/ThirdProject.png',
-      imageAlt: 'VergeSystems',
-      title: 'Niwali',
-      description: 'React.js-powered Niwali e-commerce website with a Stripe payment mechanism integrated.',
-    },
+  
     {
       linkTo: 'https://super-mart.surge.sh',
       imageSrc: '/FouProject.png',
       imageAlt: 'Supermarcado',
       title: 'Supermarcado',
-      description: 'Designed the modern UI for an ecommerce store.',
+      description: 'Designed the UI for an e-commerce store with modern, responsive features.',
     },
   ];
+
+
 
   const [visibleProjects, setVisibleProjects] = useState<boolean[]>(new Array(projects.length).fill(false));
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -99,8 +109,8 @@ const Projects: React.FC = () => {
       <p className="tracking-[0.5em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500 text-1xl">
         EXPLORE NOW
       </p>
-      <div className="container mx-auto 2xl flex flex-col items-center">
-        <div className="flex flex-col w-full items-center justify-center mt-7 px-4 md:px-0">
+      <div className=" w-full  flex justify-center items-center">
+        <div className="flex  flex-wrap justify-around mt-7 px-4 md:px-0 container mx-auto">
           {projects.map((project, index) => (
             <Link
               key={index}
